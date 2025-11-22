@@ -9,7 +9,7 @@
     <meta property="og:title" content="Cagan Bakirci" />
     <meta property="og:description"
         content="Robot learning & reinforcement learning — safety, uncertainty, manipulation." />
-    <meta property="og:image" content="headshot.jpeg" />
+    <meta property="og:image" content="headshot.jpg" />
     <style>
         :root {
             --bg: #0b0c10;
@@ -231,56 +231,37 @@
             <h2>Projects</h2>
             <div class="grid">
                 <div class="project">
-                    <h3>Safety-aware RL for manipulation (ManiSkill)</h3>
-                    <p>Define robot-credible catastrophe events and integrate learned blockers/bonuses into PPO to
-                        reduce failures while preserving task performance.</p>
-                    <ul>
-                        <li>Implemented catastrophe specifications and integrated blocker + bonus terms into PPO
-                            training/eval.</li>
-                        <li>Built reproducible analysis: standardized logs → CSV tables → plots; track failure reduction
-                            at matched return.</li>
-                        <li>Target: finalize end-to-end pipeline (multiple ManiSkill tasks), then release code/summary
-                            on submission.</li>
-                    </ul>
-                    <div class="meta"><span class="chip">Safety RL</span><span class="chip">ManiSkill</span><span
-                            class="chip">PPO</span></div>
+                    <h3>Safe Reinforcement Learning for Robotic Manipulation</h3>
+                    <p>Developing methods to improve safety in learned robotic manipulation policies while maintaining
+                        task performance across multiple benchmark environments.</p>
+                    <div class="meta"><span class="chip">Safe RL</span><span class="chip">Robotics</span><span
+                            class="chip">ManiSkill</span></div>
+                    <p class="note" style="margin-top: 10px; font-size: 13px;"><em>Details available upon
+                            publication.</em></p>
                 </div>
 
                 <div class="project">
-                    <h3>Uncertainty-triggered interventions for VLA policies</h3>
-                    <p>Use MC-Dropout entropy as a failure indicator; apply hold-time triggers and offline log-replay to
-                        evaluate re-prompt interventions on OCTO.</p>
-                    <ul>
-                        <li>Replaced per-pass probability vectors with per-step <strong>entropy</strong> (from
-                            MC-Dropout) for a cleaner, stabler signal.</li>
-                        <li>Built an offline replay “intervention simulator”: apply thresholds/hold-times; report
-                            confusion matrices & task-level metrics.</li>
-                        <li>OCTO (sim): observed ≈<strong>1–2 pp</strong> success improvements on some manipulation
-                            tasks.
-                            Prior RT-1-X (900k, JAX) pilot showed a larger single-task bump but used a non-canonical
-                            checkpoint (exploratory only).</li>
-                    </ul>
-                    <div class="meta"><span class="chip">Uncertainty</span><span class="chip">OCTO</span><span
-                            class="chip">VLA</span></div>
+                    <h3>Failure Detection for Vision-Language-Action Policies</h3>
+                    <p>Investigating uncertainty quantification techniques for detecting potential failures in robotic
+                        manipulation policies conditioned on language instructions.</p>
+                    <div class="meta"><span class="chip">Uncertainty</span><span class="chip">VLA</span><span
+                            class="chip">Robotics</span></div>
+                    <p class="note" style="margin-top: 10px; font-size: 13px;"><em>Additional details available upon
+                            request.</em></p>
                 </div>
 
                 <div class="project">
-                    <h3>Preference-based learned rewards for decentralized MAPF</h3>
-                    <p>ODrM*-guided comparisons for reward learning; KL-regularized fine-tuning; sweeps and evaluation
-                        across agent counts and grid sizes.</p>
-                    <ul>
-                        <li>Ran loss/regularization sweeps (policy, value, auxiliary, entropy, KL) with versioned
-                            checkpoints and recoverable jobs.</li>
-                        <li>Monitored success, collisions, makespan, and valid-action rate across configurations.</li>
-                        <li>Internal drafts: learned-reward fine-tune <strong>reduces collisions</strong> while keeping
-                            success comparable under matched settings.</li>
-                    </ul>
-                    <div class="meta"><span class="chip">MAPF</span><span class="chip">RLHF-style</span><span
-                            class="chip">TF1</span></div>
+                    <h3>Learning-based Coordination for Multi-Agent Pathfinding</h3>
+                    <p>Exploring learned reward functions for improving coordination in decentralized multi-agent
+                        navigation scenarios.</p>
+                    <div class="meta"><span class="chip">MAPF</span><span class="chip">Multi-Agent RL</span><span
+                            class="chip">Coordination</span></div>
+                    <p class="note" style="margin-top: 10px; font-size: 13px;"><em>Details available upon
+                            publication.</em></p>
                 </div>
             </div>
-            <p class="note"><em>Additional technical details and plots are available upon request; public artifacts will
-                    be released upon submission/publication.</em></p>
+            <p class="note" style="margin-top: 20px;"><em>For research inquiries or more information about these
+                    projects, please reach out via email.</em></p>
         </section>
 
         <section class="card">
