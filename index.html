@@ -37,6 +37,10 @@
             text-decoration: none
         }
 
+        a:hover {
+            text-decoration: underline
+        }
+
         .wrap {
             max-width: 980px;
             margin: 0 auto;
@@ -47,7 +51,8 @@
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 16px;
-            padding: 22px
+            padding: 22px;
+            margin-bottom: 20px
         }
 
         header {
@@ -128,7 +133,7 @@
             font-size: 18px;
             letter-spacing: .3px;
             color: var(--muted);
-            margin: 30px 0 12px;
+            margin: 0 0 16px;
             text-transform: uppercase
         }
 
@@ -188,10 +193,107 @@
             font-size: 14px
         }
 
+        .experience-item {
+            padding: 18px;
+            border-radius: 14px;
+            background: #0f1117;
+            border: 1px solid var(--border);
+            margin-bottom: 16px
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .experience-title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600
+        }
+
+        .experience-org {
+            color: var(--accent);
+            font-size: 16px;
+            margin: 2px 0 8px 0
+        }
+
+        .experience-date {
+            color: var(--muted);
+            font-size: 14px;
+            white-space: nowrap
+        }
+
+        .experience-item p {
+            margin: 0 0 10px;
+            color: var(--muted)
+        }
+
+        .experience-item ul {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+            color: var(--muted)
+        }
+
+        .experience-item ul li {
+            margin-bottom: 6px
+        }
+
+        .edu-item {
+            padding: 16px;
+            border-radius: 12px;
+            background: #0f1117;
+            border: 1px solid var(--border);
+            margin-bottom: 14px
+        }
+
+        .edu-item:last-child {
+            margin-bottom: 0
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .edu-school {
+            font-weight: 600;
+            font-size: 17px
+        }
+
+        .edu-date {
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .edu-degree {
+            color: var(--muted);
+            margin: 4px 0 8px 0
+        }
+
+        .edu-courses {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.5
+        }
+
         footer {
             margin-top: 36px;
             color: var(--muted);
-            font-size: 14px
+            font-size: 14px;
+            text-align: center
         }
 
         .muted {
@@ -208,11 +310,9 @@
                     <h1 class="title">Cagan Bakirci</h1>
                     <p class="tagline">Robot learning & reinforcement learning — safety, uncertainty, manipulation.</p>
                     <p class="muted">
-                        MSCS (AI) at USC. Researching <strong>safe RL</strong> for manipulation (catastrophe prevention
-                        in ManiSkill)
-                        and <strong>uncertainty-triggered interventions</strong> for VLA policies (entropy from
-                        MC-Dropout).
-                        Previously worked across OCTO / RT-1-X pilots and decentralized MAPF with learned rewards.
+                        MSCS (AI) at USC, working with the LIRA Lab and CPS-VIDA Lab. Researching safe and reliable
+                        robotic manipulation systems, with focus on failure prevention and detection in learning-based
+                        control.
                     </p>
                     <div class="links">
                         <a class="btn" href="cv.pdf">CV (PDF)</a>
@@ -226,6 +326,57 @@
                 <img class="avatar" src="headshot.jpg" alt="Cagan Bakirci headshot" />
             </div>
         </header>
+
+        <section class="card">
+            <h2>Research Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Research Assistant</h3>
+                        <div class="experience-org">
+                            <a href="https://liralab.usc.edu/" target="_blank" rel="noopener">LIRA Lab</a>, University
+                            of Southern California
+                        </div>
+                    </div>
+                    <span class="experience-date">September 2024 - Present</span>
+                </div>
+                <p>Researching safe reinforcement learning for robotic manipulation, focusing on catastrophe prevention
+                    during policy learning.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Research Assistant</h3>
+                        <div class="experience-org">
+                            <a href="https://cps-vida.github.io/" target="_blank" rel="noopener">CPS-VIDA Lab</a>,
+                            University of Southern California
+                        </div>
+                    </div>
+                    <span class="experience-date">December 2024 - Present</span>
+                </div>
+                <p>Conducting research on learning-based agent systems, including multi-agent path finding and
+                    autonomous decision-making for robotics using language-conditioned policies. Contributing to
+                    development of real-time failure detection and intervention frameworks for robotic manipulation.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Algorithm/Research Team Lead</h3>
+                        <div class="experience-org">
+                            <a href="https://en.wikipedia.org/wiki/WikiTrust" target="_blank" rel="noopener">WikiTrust
+                                2.0</a>, University of California Santa Cruz
+                        </div>
+                    </div>
+                    <span class="experience-date">October 2019 - January 2020</span>
+                </div>
+                <p>Led the algorithm and research team in development of WikiTrust 2.0, an open-source online reputation
+                    system for Wikipedia authors and content. <a href="https://github.com/WikiTrust/WikiTrust2.0"
+                        target="_blank" rel="noopener">[GitHub]</a></p>
+            </div>
+        </section>
 
         <section class="card">
             <h2>Projects</h2>
@@ -262,20 +413,69 @@
             </div>
             <p class="note" style="margin-top: 20px;"><em>For research inquiries or more information about these
                     projects, please reach out via email.</em></p>
+            <!-- NOTE: May add "Course Projects" section later -->
         </section>
 
         <section class="card">
-            <h2>Education (selected)</h2>
-            <p class="muted"><strong>USC</strong> — MSCS (AI). Coursework: Deep Learning and <em>Its</em> Applications
-                (CSCI 566), Machine Learning (CSCI 567), Algorithms (CSCI 570), Web Technologies (CSCI 571), Robotics
-                (CSCI 545), Advanced NLP (CSCI 662).</p>
-            <p class="muted"><strong>UCSC</strong> — B.S. (selected ML/NLP/Systems coursework).</p>
+            <h2>Education</h2>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div class="edu-school">University of Southern California</div>
+                    <span class="edu-date">August 2024 - Present</span>
+                </div>
+                <div class="edu-degree">Master of Science in Computer Science - Artificial Intelligence</div>
+                <div class="edu-courses">
+                    <strong>Coursework:</strong> Deep Learning and Its Applications (CSCI 566), Machine Learning (CSCI
+                    567),
+                    Algorithms (CSCI 570), Web Technologies (CSCI 571), Robotics (CSCI 545), Advanced NLP (CSCI 662)
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">
+                    <div class="edu-school">University of California, Santa Cruz</div>
+                    <span class="edu-date">March 2020</span>
+                </div>
+                <div class="edu-degree">Bachelor of Science in Computer Science with Honors</div>
+                <div class="edu-courses">
+                    <strong>Selected coursework:</strong> Machine Learning (Graduate), Machine Learning for NLP
+                    (Graduate),
+                    Artificial Intelligence, Principles of Computer System Design
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Senior Machine Learning Software Engineer</h3>
+                        <div class="experience-org">BEKO/ARCELIK Global, Istanbul, Turkey</div>
+                    </div>
+                    <span class="experience-date">June 2021 - July 2024</span>
+                </div>
+                <ul>
+                    <li><strong>ComMind:</strong> Founded and led development of a dynamic, self-correcting rating
+                        system with machine learning models. Project gained recognition from Sabanci University and
+                        secured placement in Koc University's incubation hub for commercial development.</li>
+                    <li><strong>Search Helper:</strong> Co-founded and developed a scalable, containerized microservice
+                        for string matching that automatically corrected over 210,000 search query typos in its first
+                        month, boosting search reliability by 89%.</li>
+                    <li><strong>Oculus:</strong> Founded and led development of computer vision system to automate
+                        reading of stock and serial numbers on Arcelik products.</li>
+                    <li><strong>DropShipment Project:</strong> Architected and led implementation as Technical Lead,
+                        implementing key features including fulfillment module to enhance operational efficiency.</li>
+                </ul>
+            </div>
         </section>
 
         <section class="card">
             <h2>Contact</h2>
-            <p class="muted">Best reach: <a href="mailto:caganbakirci@gmail.com">caganbakirci@gmail.com</a> • USC: <a
-                    href="mailto:cbakirci@usc.edu">cbakirci@usc.edu</a></p>
+            <p class="muted">Best reach: <a href="mailto:caganbakirci@gmail.com">caganbakirci [at] gmail [dot] com</a> •
+                USC: <a href="mailto:cbakirci@usc.edu">cbakirci [at] usc [dot] edu</a></p>
         </section>
 
         <footer>
