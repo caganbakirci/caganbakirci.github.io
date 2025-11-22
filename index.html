@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cagan Bakirci</title>
+    <meta name="description" content="Robot learning & reinforcement learning — safety, uncertainty, manipulation." />
+    <meta property="og:title" content="Cagan Bakirci" />
+    <meta property="og:description"
+        content="Robot learning & reinforcement learning — safety, uncertainty, manipulation." />
+    <meta property="og:image" content="headshot.jpeg" />
+    <style>
+        :root {
+            --bg: #0b0c10;
+            --card: #111217;
+            --text: #e6e6e6;
+            --muted: #a7a7a7;
+            --accent: #4fc3f7;
+            --border: #1d1f27;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none
+        }
+
+        .wrap {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 28px 20px 64px
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 22px
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1.4fr .8fr;
+            gap: 28px;
+            align-items: center
+        }
+
+        @media(max-width:820px) {
+            header {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .title {
+            font-size: clamp(24px, 3.6vw, 36px);
+            margin: 0 0 6px;
+            line-height: 1.1
+        }
+
+        .tagline {
+            color: var(--muted);
+            margin: 0 0 14px
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: #14161c;
+            color: var(--text);
+            font-weight: 600
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: var(--accent)
+        }
+
+        .avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 16px;
+            object-fit: cover;
+            border: 1px solid var(--border)
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: center
+        }
+
+        @media(max-width:820px) {
+            .about {
+                grid-template-columns: 1fr
+            }
+
+            .avatar {
+                width: 160px;
+                height: 160px
+            }
+        }
+
+        h2 {
+            font-size: 18px;
+            letter-spacing: .3px;
+            color: var(--muted);
+            margin: 30px 0 12px;
+            text-transform: uppercase
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px
+        }
+
+        @media(max-width:820px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .project {
+            padding: 18px;
+            border-radius: 14px;
+            background: #0f1117;
+            border: 1px solid var(--border)
+        }
+
+        .project h3 {
+            margin: 0 0 6px;
+            font-size: 18px
+        }
+
+        .project p {
+            margin: 0 0 10px;
+            color: var(--muted)
+        }
+
+        .project ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--muted)
+        }
+
+        .meta {
+            margin-top: 12px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .chip {
+            font-size: 12px;
+            padding: 6px 8px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            color: var(--muted)
+        }
+
+        .note {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        footer {
+            margin-top: 36px;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="card">
+            <div class="about">
+                <div>
+                    <h1 class="title">Cagan Bakirci</h1>
+                    <p class="tagline">Robot learning & reinforcement learning — safety, uncertainty, manipulation.</p>
+                    <p class="muted">
+                        MSCS (AI) at USC. Researching <strong>safe RL</strong> for manipulation (catastrophe prevention
+                        in ManiSkill)
+                        and <strong>uncertainty-triggered interventions</strong> for VLA policies (entropy from
+                        MC-Dropout).
+                        Previously worked across OCTO / RT-1-X pilots and decentralized MAPF with learned rewards.
+                    </p>
+                    <div class="links">
+                        <a class="btn" href="cv.pdf">CV (PDF)</a>
+                        <a class="btn secondary" href="mailto:caganbakirci@gmail.com">Email</a>
+                        <a class="btn secondary" href="https://github.com/caganbakirci" target="_blank"
+                            rel="noopener">GitHub</a>
+                        <a class="btn secondary" href="https://www.linkedin.com/in/caganbakirci" target="_blank"
+                            rel="noopener">LinkedIn</a>
+                    </div>
+                </div>
+                <img class="avatar" src="headshot.jpg" alt="Cagan Bakirci headshot" />
+            </div>
+        </header>
+
+        <section class="card">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="project">
+                    <h3>Safety-aware RL for manipulation (ManiSkill)</h3>
+                    <p>Define robot-credible catastrophe events and integrate learned blockers/bonuses into PPO to
+                        reduce failures while preserving task performance.</p>
+                    <ul>
+                        <li>Implemented catastrophe specifications and integrated blocker + bonus terms into PPO
+                            training/eval.</li>
+                        <li>Built reproducible analysis: standardized logs → CSV tables → plots; track failure reduction
+                            at matched return.</li>
+                        <li>Target: finalize end-to-end pipeline (multiple ManiSkill tasks), then release code/summary
+                            on submission.</li>
+                    </ul>
+                    <div class="meta"><span class="chip">Safety RL</span><span class="chip">ManiSkill</span><span
+                            class="chip">PPO</span></div>
+                </div>
+
+                <div class="project">
+                    <h3>Uncertainty-triggered interventions for VLA policies</h3>
+                    <p>Use MC-Dropout entropy as a failure indicator; apply hold-time triggers and offline log-replay to
+                        evaluate re-prompt interventions on OCTO.</p>
+                    <ul>
+                        <li>Replaced per-pass probability vectors with per-step <strong>entropy</strong> (from
+                            MC-Dropout) for a cleaner, stabler signal.</li>
+                        <li>Built an offline replay “intervention simulator”: apply thresholds/hold-times; report
+                            confusion matrices & task-level metrics.</li>
+                        <li>OCTO (sim): observed ≈<strong>1–2 pp</strong> success improvements on some manipulation
+                            tasks.
+                            Prior RT-1-X (900k, JAX) pilot showed a larger single-task bump but used a non-canonical
+                            checkpoint (exploratory only).</li>
+                    </ul>
+                    <div class="meta"><span class="chip">Uncertainty</span><span class="chip">OCTO</span><span
+                            class="chip">VLA</span></div>
+                </div>
+
+                <div class="project">
+                    <h3>Preference-based learned rewards for decentralized MAPF</h3>
+                    <p>ODrM*-guided comparisons for reward learning; KL-regularized fine-tuning; sweeps and evaluation
+                        across agent counts and grid sizes.</p>
+                    <ul>
+                        <li>Ran loss/regularization sweeps (policy, value, auxiliary, entropy, KL) with versioned
+                            checkpoints and recoverable jobs.</li>
+                        <li>Monitored success, collisions, makespan, and valid-action rate across configurations.</li>
+                        <li>Internal drafts: learned-reward fine-tune <strong>reduces collisions</strong> while keeping
+                            success comparable under matched settings.</li>
+                    </ul>
+                    <div class="meta"><span class="chip">MAPF</span><span class="chip">RLHF-style</span><span
+                            class="chip">TF1</span></div>
+                </div>
+            </div>
+            <p class="note"><em>Additional technical details and plots are available upon request; public artifacts will
+                    be released upon submission/publication.</em></p>
+        </section>
+
+        <section class="card">
+            <h2>Education (selected)</h2>
+            <p class="muted"><strong>USC</strong> — MSCS (AI). Coursework: Deep Learning and <em>Its</em> Applications
+                (CSCI 566), Machine Learning (CSCI 567), Algorithms (CSCI 570), Web Technologies (CSCI 571), Robotics
+                (CSCI 545), Advanced NLP (CSCI 662).</p>
+            <p class="muted"><strong>UCSC</strong> — B.S. (selected ML/NLP/Systems coursework).</p>
+        </section>
+
+        <section class="card">
+            <h2>Contact</h2>
+            <p class="muted">Best reach: <a href="mailto:caganbakirci@gmail.com">caganbakirci@gmail.com</a> • USC: <a
+                    href="mailto:cbakirci@usc.edu">cbakirci@usc.edu</a></p>
+        </section>
+
+        <footer>
+            <p class="muted">© <span id="y"></span> Cagan Bakirci • Built with a minimalist single-file template</p>
+        </footer>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
